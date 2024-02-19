@@ -47,7 +47,7 @@ def reward_collector():
 
     try:
         button = WebDriverWait(driver, delay).until(EC.element_to_be_clickable((
-            By.CSS_SELECTOR, 'css-10meywq')))
+            By.CLASS_NAME, 'css-10meywq')))
         button.click()
         print("Successfully claimed daily reward!")
     except TimeoutException:
